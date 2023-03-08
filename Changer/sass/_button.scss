@@ -1,0 +1,68 @@
+%btn {
+  background-color: var(--secondary-color);
+  color: var(--grey-color-light);
+  border: none;
+  padding: 1rem 2rem;
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  transition: all 0.2s;
+  @media only screen and (max-width: 33.75em) {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+  }
+  &:hover {
+    background-color: var(--grey-color-dark);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    transform: translateY(-0.5rem);
+  }
+  &:active {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: translateY(0.5rem);
+  }
+}
+%btn2 {
+  background-color: var(--secondary-color);
+  color: var(--grey-color-light);
+  border: none;
+  padding: 1rem 2rem;
+  transition: all 0.2s;
+  @media only screen and (max-width: 33.75em) {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+.navbtn {
+  @extend %btn2;
+  position: absolute;
+  top: 20%;
+  right: 3%;
+}
+.headbtn {
+  @extend %btn;
+}
+.therapistbtn {
+  @extend %btn;
+  padding: 1rem 8rem;
+  margin-left: 1.5rem;
+  @media only screen and (max-width: 75em) {
+    margin-left: 0rem;
+  }
+  @media only screen and (max-width: 33.75em) {
+    padding: 0.5rem 6rem;
+  }
+}
+.submitbtn {
+  @extend %btn2;
+  margin-bottom: 1rem;
+}

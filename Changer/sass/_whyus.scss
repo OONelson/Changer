@@ -1,0 +1,97 @@
+.why {
+  grid-column: center-start/ full-end;
+  grid-row: 3/ 3;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4rem;
+  padding: 5rem 2rem 1rem 2rem;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+   @media only screen and (max-width: 75em) {
+     padding: 2rem ;
+     grid-gap: 2rem;
+  }
+
+  &__photos {
+    grid-column: 2/2;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    transition: all 0.2s;
+    position: relative;
+    @media only screen and (max-width: 36.25em) {
+     grid-column: 1/ span 2;
+     grid-row: 2/2;
+  }
+  }
+  &__figpic {
+    width: 100%;
+    transition: all 0.2s;
+    
+    &--one {
+      grid-column: 3/7;
+      grid-row: 1/2;
+      transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+      @media only screen and (max-width: 36.25em) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 26.25em) {
+      width: 65%;
+    }
+      &:hover,
+      &:hover ~ .text {
+        opacity: 1;
+        animation-name: hover;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-direction: alternate-reverse;
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+      }
+
+    }
+
+    &--two {
+      margin-top: -3rem;
+      grid-column: 1/5;
+      grid-row: 2/3;
+      width: 115%;
+      transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+      @media only screen and (max-width: 36.25em) {
+    width: 85%;
+  }
+  @media only screen and (max-width: 26.25em) {
+      width: 70%;
+    }
+      &:hover,
+      &:hover ~ .textt {
+        opacity: 1;
+        animation-name: hover;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-direction: alternate-reverse;
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+  &__content {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    align-self: center;
+    justify-self: center;
+    @media only screen and (max-width: 36.25em) {
+    grid-column: 1/ span 2;
+    grid-row: 1/1;
+  }
+  }
+}

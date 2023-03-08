@@ -1,0 +1,71 @@
+.contact {
+  grid-column: center-start/ full-end;
+  grid-row: 6/ 6;
+  background-image: linear-gradient(
+    105deg,
+    rgba(235, 235, 235, 0.801),
+    rgba(196, 195, 195, 0.808)
+  );
+  padding: 5rem 2.5rem;
+  position: relative;
+  @media only screen and (max-width: 75em) {
+    grid-column: full-start/ full-end;
+  }
+
+  &__img {
+    height: 100%;
+    width: 70.5%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    opacity: 0.6;
+    @media only screen and (max-width: 75em) {
+      width: 55%;
+    }
+    @media only screen and (max-width: 36.25em) {
+      width: 50%;
+    }
+  }
+}
+.form {
+  width: 30rem;
+  padding: 2rem;
+  @media only screen and (max-width: 75em) {
+    width: 40rem;
+  }
+  @media only screen and (max-width: 36.25em) {
+    width: 30rem;
+  }
+
+  &__group {
+    position: relative;
+    margin-top: 2.5rem;
+  }
+  &__control {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    background-color: rgba(247, 246, 246, 0.801);
+    border-bottom: 2px solid var(--secondary-color);
+    font-size: 1.5rem;
+
+    &:focus,
+    &:valid {
+      + label {
+        top: -2rem;
+      }
+    }
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    pointer-events: none;
+    transition: top 0.2s ease;
+    &:hover {
+      top: -2rem;
+    }
+  }
+}

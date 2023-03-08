@@ -1,0 +1,1 @@
+.treatments{grid-column:full-start/full-end;grid-row:4/5;display:grid;grid-template-columns:repeat(8, 1fr);padding:4rem 2rem}.treatments__fig{width:100%}.treatments__img{height:80%;width:100%}

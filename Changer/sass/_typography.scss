@@ -1,0 +1,79 @@
+%heading {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: white;
+  font-family: "Climate Crisis" sans-serif;
+}
+.heading-1 {
+  @extend %heading;
+  font-size: 6rem;
+  font-style: italic;
+}
+.heading-2 {
+  @extend %heading;
+  font-size: 3rem;
+  color: var(--secondary-color);
+  padding: 1rem 2rem;
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.heading-3 {
+  @extend %heading;
+  font-size: 2rem;
+}
+.heading-4 {
+  @extend %heading;
+}
+.heading-5 {
+  @extend %heading;
+  color: var(--secondary-color);
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.text {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  opacity: 0;
+  font-weight: 400;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  font-family: var(--text-font);
+}
+.textt {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  opacity: 0;
+  font-weight: 400;
+  position: absolute;
+  top: 53%;
+  left: 8rem;
+  font-family: var(--text-font);
+}
+.paragraph {
+  font-size: 1.3rem;
+}
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 4rem;
+}
+.mb-lg {
+  margin-bottom: 5rem;
+}
+.mb-hg {
+  margin-bottom: 7rem;
+}
+.mt {
+  margin-top: 4rem;
+}
+.mts {
+  margin-top: 2rem;
+}
+.mt-hg {
+  margin-top: 12rem;
+}

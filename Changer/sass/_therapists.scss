@@ -1,0 +1,28 @@
+.therapists{
+     grid-column: full-start/ center-start;
+    grid-row: 3/ 3;
+    padding: 5rem 1rem 3rem 1rem;
+    box-shadow: .5rem 0 1rem rgba(0,0,0,.3);
+     @media only screen and (max-width: 75em) {
+     padding: 2rem 1rem;
+  }
+
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        width: 100%;
+
+        span{
+            font-size: 1.5rem;
+            color: white;
+            padding: .5rem 1rem;
+            font-family: var(--heading-font);
+           
+        }
+    }
+    &__img{
+        height: 100%;
+        min-width: min-content;
+    }
+}

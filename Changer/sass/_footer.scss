@@ -1,0 +1,44 @@
+.footer {
+  grid-column: full-start/ full-end;
+  grid-row: 7/ 7;
+
+  background-color: var(--secondary-color);
+
+  padding: 8rem 0;
+  @media only screen and (max-width: 36.25em) {
+    padding: 6rem 0;
+  }
+
+  &__nav {
+    list-style: none;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 0 5rem;
+    align-items: center;
+    @media only screen and (max-width: 36.25em) {
+    grid-gap: 1rem;
+    padding: 0 3rem;
+  }
+  }
+  &__link:link,
+  &__link:visited {
+    color: var(--primary-color1);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7rem;
+    text-decoration: none;
+    display: block;
+    padding: 2.5rem 0;
+    transition: all 0.2s;
+    @media only screen and (max-width: 36.25em) {
+      padding: 1.3rem 0;
+      font-size: 1.5rem;
+    }
+  }
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-3px);
+  }
+}
